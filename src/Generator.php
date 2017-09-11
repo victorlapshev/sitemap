@@ -24,15 +24,17 @@
 
         /* configs */
         private $serverUrl;
+        private $params;
 
         /**
          * Generator constructor.
          *
          * @param string $serverUrl Server url with protocol and w\o trailing slash
+         * @param array $params
          */
-        public function __construct($serverUrl) {
-
+        public function __construct($serverUrl, $params = []) {
             $this->serverUrl = $serverUrl;
+            $this->params = $params;
         }
 
         /**
@@ -111,7 +113,7 @@
                         $siteMap = $this->getXmlObject();
                     }
 
-                    if(!empty($this->params['check_response'])) {
+                    if(!empty($this->params['checkResponse'])) {
                         try {
                             $entire->test();
                         } catch(EntireTestException $e) {
