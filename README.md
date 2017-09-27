@@ -1,8 +1,7 @@
 # Sitemap generator
 ### Install
 ```sh
-composer config repositories.lapshev/sitemap vcs https://github.com/victorlapshev/sitemap
-composer require lapshev/sitemap:dev-master
+composer require lapshev/sitemap
 ```
 ### Usage
 1. Create generator object
