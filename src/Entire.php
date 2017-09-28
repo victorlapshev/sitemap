@@ -34,6 +34,13 @@
             $this->priority = $priority;
         }
 
+        /**
+         * Add node to xml
+         *
+         * @param \SimpleXMLElement $siteMap
+         *
+         * @return \SimpleXMLElement
+         */
         public function add(\SimpleXMLElement $siteMap) {
             $url = $siteMap->addChild('url');
 
@@ -46,6 +53,12 @@
             return $url;
         }
 
+        /**
+         * Test entire for server response
+         *
+         * @throws EntireTestException
+         * @throws Exception
+         */
         public function test() {
             $url = $this->loc;   //todo
 
