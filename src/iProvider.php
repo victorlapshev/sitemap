@@ -19,7 +19,7 @@
         public function prepareData();
 
         /**
-         * Get next entire or null if finish
+         * Get next entire or null if finish fetching
          *
          * @return Entire
          */
