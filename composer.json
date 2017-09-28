@@ -1,7 +1,6 @@
 {
   "name": "lapshev/sitemap",
   "description": "Sitemap generator library",
-  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
